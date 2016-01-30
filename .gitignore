@@ -1,0 +1,11 @@
+# IntellijIDEA
+.idea/
+*.iml
+
+# Eclipse
+.settings
+.classpath
+
+# build system
+build/
+gradle.properties
