@@ -1,6 +1,6 @@
 package org.swordess.gradle.plugin
 
-class ConfigPluginExtension {
+class SwordessConfigPluginExtension {
 
     def String vcsUrl
 

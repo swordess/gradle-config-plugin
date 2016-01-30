@@ -10,11 +10,11 @@ import org.gradle.testing.jacoco.plugins.JacocoPlugin
 import org.jetbrains.kotlin.gradle.plugin.KotlinPluginWrapper
 import org.kt3k.gradle.plugin.CoverallsPlugin
 
-class ConfigPlugin implements Plugin<Project> {
+class SwordessConfigPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        project.extensions.create("swordess", ConfigPluginExtension)
+        project.extensions.create("swordess", SwordessConfigPluginExtension)
 
         project.plugins.apply KotlinPluginWrapper
 
@@ -78,7 +78,7 @@ class ConfigPlugin implements Plugin<Project> {
                 licenses = ['MIT']
                 vcsUrl = project.swordess.vcsUrl
                 version {
-                    name = project.version
+                    name = project.version.toString()
                     released = new Date()
                 }
             }
