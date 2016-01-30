@@ -9,7 +9,6 @@ import org.gradle.api.tasks.bundling.Jar
 import org.gradle.testing.jacoco.plugins.JacocoPlugin
 import org.jetbrains.kotlin.gradle.plugin.KotlinPluginWrapper
 import org.kt3k.gradle.plugin.CoverallsPlugin
-import org.standardout.gradle.plugin.versioneye.VersionEyePlugin
 
 class ConfigPlugin implements Plugin<Project> {
 
@@ -18,9 +17,6 @@ class ConfigPlugin implements Plugin<Project> {
         project.extensions.create("swordess", ConfigPluginExtension)
 
         project.plugins.apply KotlinPluginWrapper
-
-        // VersionEye
-        project.plugins.apply VersionEyePlugin
 
         // Unit Test Coverage
         project.plugins.apply JacocoPlugin
