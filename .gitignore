@@ -8,4 +8,5 @@
 
 # build system
 build/
+.gradle/
 gradle.properties

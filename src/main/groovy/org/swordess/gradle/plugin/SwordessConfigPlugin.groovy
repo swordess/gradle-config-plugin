@@ -77,7 +77,7 @@ class SwordessConfigPlugin implements Plugin<Project> {
                     repo = 'maven'
                     name = project.name
                     licenses = ['MIT']
-                    vcsUrl = project.swordess.vcsUrl != null ? project.swordess.vcsUrl : "https://github.com/xingyuli/${project.name}.git"
+                    vcsUrl = project.swordess.vcsUrl != null ? project.swordess.vcsUrl : "https://github.com/swordess/${project.name}.git"
                     version {
                         name = project.version
                         released = new Date()
